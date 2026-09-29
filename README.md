@@ -8,7 +8,7 @@ Most of what I know, I know because I measured something and it disagreed with m
 
 ## Where the measurement disagreed with me
 
-**[retrieval-eval](https://github.com/MdRaf1/the-data-guardian) — three negative results**
+**[retrieval-eval](https://github.com/MdRaf1/the-data-guardian/tree/main/retrieval-eval) — three negative results**
 
 I built a retrieval evaluation harness to test claims one of my own earlier designs had asserted with nothing behind them. 300-document corpus, 36 graded queries frozen before a single retriever ran, seven retrievers scored on nDCG@10, Recall@10 and MRR@10.
 
