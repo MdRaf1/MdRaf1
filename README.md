@@ -50,10 +50,12 @@ It ships a bit-exact oracle that refuses to compare runs whose configuration fin
 
 ## In other people's codebases
 
-Three patches reviewed and merged upstream in projects I did not write:
+Patches reviewed and merged upstream in projects I did not write. Bug fixes, a regression test and an opt-in rendering feature, across two codebases and two maintainers:
 
 - a version probe reading a nonzero exit as "not installed", silently disabling a working extractor;
-- a page-break rule wrong across seven document templates — submitted with a regression test, so the corrected behaviour could not silently revert;
+- page-break and line-wrapping rules wrong across seven document templates, submitted with a regression test so the corrected behaviour could not silently revert;
+- a standalone test that pins the renderer to those page-break rules;
+- an opt-in rendering flag for a one-word widow I had hit myself, taken upstream as a feature rather than patched locally;
 - a build fix on **HackMatrix**, a C++ 3D Linux desktop environment: diagnosed Abseil missing-symbol linker errors and corrected the makefile link flags to restore a broken build.
 
 ---
